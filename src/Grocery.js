@@ -16,14 +16,18 @@ const Grocery = ({ name, quantity, notes, purchased, starred, onPurchase, onStar
 
       <button
         className="Grocery-purchase"
-      >{purchased ? 'Unpurchase' : 'Purchase'}</button>
+        onClick={onPurchase}
+      >{purchased ? 'Unpurchase' : 'Purchase'}
+       </button>
 
       <button
         className="Grocery-starred"
+        onClick={onStar}
       >{starred ? 'Unstar' : 'Star'}</button>
 
       <button
         className="Grocery-remove"
+        onClick={onDelete}
       >Remove</button>
 
     </article>

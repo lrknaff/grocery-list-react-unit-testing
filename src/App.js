@@ -12,6 +12,9 @@ class App extends Component {
         purchased={false}
         quantity={'17 bunches'}
         notes={'I like bananas'}
+        onPurchase={this.onPurchaseMock}
+        onStar={this.onStarMock}
+        onDelete={this.onDeleteMock}
       />
     );
   }
