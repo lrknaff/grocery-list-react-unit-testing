@@ -65,3 +65,32 @@ describe('Grocery', () => {
     expect(wrapper.find('.Grocery-notes').length).toEqual(0)
   });
 })
+
+describe('.Grocery-purchase button', () => {
+  it('should have a text of "Purchase" if purchased is false', () => {
+    const wrapper = shallow(<Grocery name="Bananas" purchased={undefined}/>)
+
+    expect(wrapper.find('.Grocery-purchase').text()).toEqual('Purchase')
+  });
+
+  it('should have a text of "Unpurchase" if purchased is true', () => {
+    const wrapper = shallow(<Grocery name="Bananas" purchased={true}/>)
+
+    expect(wrapper.find('.Grocery-purchase').text()).toEqual('Unpurchase')
+  })
+})
+
+
+describe('.Grocery-purchase button', () => {
+  it('should have a text of "Purchase" if purchased is false', () => {
+    const wrapper = shallow(<Grocery name="Bananas" purchased={undefined}/>)
+
+    expect(wrapper.find('.Grocery-purchase').text()).toEqual('Purchase')
+  });
+
+  it('should have a text of "Unpurchase" if purchased is true', () => {
+    const wrapper = shallow(<Grocery name="Bananas" purchased={true}/>)
+
+    expect(wrapper.find('.Grocery-purchase').text()).toEqual('Unpurchase')
+  })
+})
