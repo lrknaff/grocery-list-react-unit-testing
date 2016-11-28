@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme'
 import Grocery from './Grocery'
 
 describe('Grocery', () => {
-  it('renders the name of the frocery in <h3> tags', () => {
+  it('renders the name of the Grocery in <h3> tags', () => {
     const wrapper = shallow(<Grocery name="Bananas" />);
     const title = <h3>Bananas</h3>;
 
