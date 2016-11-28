@@ -10,6 +10,8 @@ class App extends Component {
         name={'bananas'}
         starred={false}
         purchased={false}
+        quantity={'17 bunches'}
+        notes={'I like bananas'}
       />
     );
   }
