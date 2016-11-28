@@ -22,6 +22,10 @@ const Grocery = ({ name, quantity, notes, purchased, starred, onPurchase, onStar
         className="Grocery-starred"
       >{starred ? 'Unstar' : 'Star'}</button>
 
+      <button
+        className="Grocery-remove"
+      >Remove</button>
+
     </article>
   );
 };
