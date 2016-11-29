@@ -9,10 +9,13 @@ class App extends Component {
     return (
       <div>
         <GroceryList
-          groceries={[]}
+          groceries={[
+            { id: 1, name: "Bananas" },
+            { id: 2, name: "Oranges" },
+          ]}
           onClear={this.onClearMock}
         />
-        <Grocery
+        {/* <Grocery
         name={'bananas'}
         starred={false}
         purchased={false}
@@ -21,7 +24,7 @@ class App extends Component {
         onPurchase={this.onPurchaseMock}
         onStar={this.onStarMock}
         onDelete={this.onDeleteMock}
-        />
+        /> */}
       </div>
     );
   }

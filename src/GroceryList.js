@@ -8,7 +8,7 @@ const GroceryList = ({ groceries, onClear }) => {
     <form></form>
     <button
       className="Grocery-clear-list"
-      disabled={groceries ? false : true}
+      disabled={groceries === [] ? true : false}
       onClick={onClear}
     >Clear Groceries</button>
     <h2>Grocery List</h2>

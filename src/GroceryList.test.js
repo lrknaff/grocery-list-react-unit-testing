@@ -64,9 +64,7 @@ describe('GroceryList', () => {
   it('should render a clear button', () => {
     const wrapper = shallow(
       <GroceryList
-        groceries={[
-          { id: 1, name: "Bananas" }
-        ]}
+        groceries={[]}
       />
     )
 
