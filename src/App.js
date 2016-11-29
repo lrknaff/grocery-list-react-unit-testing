@@ -7,7 +7,12 @@ import GroceryList from './GroceryList'
 class App extends Component {
   render() {
     return (
-      <Grocery
+      <div>
+        <GroceryList
+          groceries={[]}
+          onClear={this.onClearMock}
+        />
+        <Grocery
         name={'bananas'}
         starred={false}
         purchased={false}
@@ -16,7 +21,8 @@ class App extends Component {
         onPurchase={this.onPurchaseMock}
         onStar={this.onStarMock}
         onDelete={this.onDeleteMock}
-      />
+        />
+      </div>
     );
   }
 }
